@@ -7,7 +7,7 @@ import { DestinationComponent } from './components/destination/destination.compo
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent , NavbarComponent, DestinationComponent, FooterComponent],
+  imports: [RouterOutlet, FooterComponent , NavbarComponent, DestinationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
