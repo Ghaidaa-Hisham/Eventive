@@ -1,0 +1,64 @@
+.event-card {
+    max-width: 5000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.card-body h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-body p {
+    font-size: 1.5rem;
+    color: rgb(84, 82, 82);
+}
+
+.card-img {
+    border-radius: 15px  15px;
+    object-fit:contain;
+    align-items: center;
+}
+
+/* Promote section */
+.text{
+    font-size: 1rem;
+    color: gray;
+}
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    size: 30px;
+}
+
+.icon i {
+    margin-right: 15px; /* Creates space between share and like icons */
+    font-size: 2rem;
+    color: #2c0639;
+    
+}
+.img{
+    width:100%;
+     height:100%
+}
+button{
+    float: right;     
+   }
+
+.discount-badge {
+    background-color: #ffe8cc; 
+    color: #2c0639; 
+    padding: 10px 15px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.discount-badge i {
+    margin-right: 8px;
+    color: #ea8371; 
+}
