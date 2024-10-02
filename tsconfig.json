@@ -3,7 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-      "types": ["jquery"],
+    "types": ["jquery"],
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
