@@ -1,0 +1,98 @@
+<div class="parent">
+  <div class="div1">
+    <h3>Events in Luxor, Egypt</h3>
+    <h5>Search for something you love or check out popular events in your area.
+    </h5>
+  </div>
+  <div class="div2"></div>
+  <div class="div3">
+    <div class="container">
+      <h3 style="color: rgb(2, 2, 56);">Filter</h3>
+      <form [formGroup]="filtersGroup">
+      <div class="col-md-6">
+        <h5 class="fa-lg" style="color: rgb(2, 2, 56);" >Category</h5>
+        <div class="form-check mt-3">
+          <input mdbInput class="form-check-input" type="radio" name="color" id="arrayRadio1" value="black"
+            formControlName="color" />
+          <label class="form-check-label" for="arrayRadio1">Business</label>
+        </div>
+      
+        <div class="form-check">
+          <input mdbInput class="form-check-input" type="radio" name="color" id="arrayRadio2" value="red"
+            formControlName="color" />
+          <label class="form-check-label" for="arrayRadio2">Food & Drink</label>
+        </div>
+      
+        <div class="form-check">
+          <input mdbInput class="form-check-input" type="radio" name="color" id="arrayRadio3" value="blue"
+            formControlName="color" />
+          <label class="form-check-label" for="arrayRadio3">Health</label>
+        </div>
+      
+        <div class="form-check">
+          <input mdbInput class="form-check-input" type="radio" name="color" id="arrayRadio4" value="gray"
+            formControlName="color" />
+          <label class="form-check-label" for="arrayRadio4">Music</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5 style="color: rgb(2, 2, 56);" >Date</h5>
+                <div class="form-check mt-3">
+                  <input mdbInput class="form-check-input" type="radio" name="sale" id="arrayRadio5" value="yes"
+                    formControlName="sale" />
+                  <label class="form-check-label" for="arrayRadio5">Today</label>
+                </div>
+                <div class="form-check">
+                  <input mdbInput class="form-check-input" type="radio" name="sale" id="arrayRadio6" value="no"
+                    formControlName="sale" />
+                  <label class="form-check-label" for="arrayRadio6">Tomorrow</label>
+                </div>
+                <div class="form-check">
+                  <input mdbInput class="form-check-input" type="radio" name="sale" id="arrayRadio6" value="no"
+                    formControlName="sale" />
+                  <label class="form-check-label" for="arrayRadio6">This weekend</label>
+                </div>
+                <div class="form-check">
+                  <input mdbInput class="form-check-input" type="radio" name="sale" id="arrayRadio6" value="no"
+                    formControlName="sale" />
+                  <label class="form-check-label" for="arrayRadio6">Pick a date...</label>
+                </div>
+      </div>
+      <div class="col-md-6">
+          <h5 class="fa-lg" style="color: rgb(2, 2, 56);">Price</h5>
+        
+          <div class="form-check mt-3">
+            <input mdbInput class="form-check-input" type="radio" name="color" id="arrayRadio1" value="black"
+              formControlName="color" />
+            <label class="form-check-label" for="arrayRadio1">Free</label>
+          </div>
+        
+          <div class="form-check">
+            <input mdbInput class="form-check-input" type="radio" name="color" id="arrayRadio2" value="red"
+              formControlName="color" />
+            <label class="form-check-label" for="arrayRadio2">Paid</label>
+          </div>
+        
+      </div>
+        <button (click)="clearFilters()" type="button" class="btn btn-primary mt-3">
+          Clear all filters
+        </button>
+      
+      </form>
+  
+    <!--<div class="row text-center">
+        <div *ngFor="let item of filteredItems$ | async" class="col-md-4 mt-3" style="max-width: 350px;">
+          <div class="card shadow-2">
+            <img [attr.src]="item.img" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">{{ item.product }}</h5>
+              <p class="card-text">{{ item.price }} $</p>
+              <a href="#" class="btn btn-primary ripple-surface">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+  <div class="div4"> </div>
+</div>

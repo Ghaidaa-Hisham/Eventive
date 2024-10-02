@@ -1,0 +1,27 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 5;
+  border: 2px solid rgb(216, 24, 56);
+}
+
+.div2 {
+  grid-area: 1 / 5 / 13 / 7;
+  border: 2px solid rgb(24, 216, 50);
+}
+
+.div3 {
+  grid-area: 3 / 1 / 13 / 2;
+  border: 2px solid rgb(24, 69, 216);
+}
+
+.div4 {
+  grid-area: 3 / 2 / 13 / 5;
+  border: 2px solid rgb(194, 24, 216);
+}
