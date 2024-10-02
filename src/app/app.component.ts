@@ -5,12 +5,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { DestinationComponent } from './components/destination/destination.component';
 import { LoginComponent } from "./components/login/login.component";
 import { SearchEventComponent } from "./components/search-event/search-event.component";
+import { TicketsComponent } from "./components/tickets/tickets.component";
+import { TrendsComponent } from "./components/trends/trends.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, NavbarComponent, DestinationComponent, LoginComponent, SearchEventComponent],
+  imports: [RouterOutlet, FooterComponent, NavbarComponent, DestinationComponent, LoginComponent, SearchEventComponent, TicketsComponent, TrendsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
