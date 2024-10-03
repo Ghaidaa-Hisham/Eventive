@@ -1,26 +1,6 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    font-size: 14px;
-    letter-spacing: normal;
-    font-family:Verdana, 'Geneva', Tahoma, sans-serif;
-    font-weight: 400;
-  }
-  body{
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    flex: 1;
-    height: 100%;
-    flex-direction: row;
-    font-size: 14px;
-    justify-content: space-between;
-    letter-spacing: normal;
-  }
+
   .home-bottom-shelf-container{
-    background-color: #f8f7fa;
+    // background-color: #f8f7fa;
     width: 100%;
     /*height: auto;*/
     display: flex;
@@ -270,6 +250,9 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+  }
+  .top-destination-card{
+    transition: 0.3s;
   }
   .top-destination-card_gradiant{
     margin: 0;

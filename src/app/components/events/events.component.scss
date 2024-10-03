@@ -1,16 +1,4 @@
 
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-  }
-  
   /* Filter Tabs Section */
   .filter-tabs {
     /* background-color: white; */
@@ -20,38 +8,30 @@
   }
   
   .tabs {
-    display: flex;
-    justify-content: center;
     list-style: none;
-    padding: 10px 0;
+    // padding: 10px 0;
   }
   
-  .tab {
+  .tab-item {
     padding: 10px 20px;
-    margin: 0 10px;
     cursor: pointer;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 15px;
     color: #333;
     background-color: #f4f4f4;
+    transition: 0.3s;
   }
   
-  .tab:hover, .tab.active {
+  .tab-item:hover, .tab-item.active {
     background-color: #ff5000;
     color: white;
   }
   
   /* Events Section */
-  .events-section {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-  }
   
   .events-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
   }
   
   .events-grid {
