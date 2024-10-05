@@ -1,83 +1,176 @@
-* {
-    box-sizing: border-box;
+body,
+html {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f8f8f8;
+    height: auto;
 }
 
 .container {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    align-items: center;
-    width: 300px;
+    display: flex;
+    height: auto;
 }
 
-h1 {
-    font-size: 2rem;
-    color: #45046a;
-    margin-bottom: 1.5rem;
+@media (max-width: 768px) {
+    .form-container {
+        padding: 2rem;
+    }
 }
 
-.form {
-    margin-bottom: 1rem;
-    text-align: left;
+.form-container {
+    flex: 1;
+    padding: 4rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
 }
 
-label {
-    font-size: 0.9rem;
-    color: #45046a;
-}
-
-input {
+input,
+button {
     width: 100%;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    margin-top: 0.5rem;
-    font-size: 1rem;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    font-size: 70px;
 }
 
-.error {
-    color: red;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #e64a19;
+    background-color: #e64a19;
+}
+
+/* Background Image styling*/
+/* .background-image {
+    flex: 2;
+    background: no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    justify-content: center;
+    object-fit: contain;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+
+} */
+
+@media (max-width: 768px) {
+    .background-image {
+        display: none;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .signup-container {
+        margin-top: 100px;
+        width: 100px;
+    }
+} */
+
+/* Customize form container */
+
+
+.container h1 {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #121212;
+}
+
+.container :placeholder-shown {
+    font-size: 40px;
 }
 
 .btn-continue {
-    background-color: #e63946;
+    background-color: #ff5700;
     color: white;
-    padding: 12px;
     width: 100%;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 20px;
+    font-size: 30px;
 }
 
+.or-divider {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+
+}
+
+.or-divider::before {
+    content: '';
+    display: inline-block;
+    width: 30%;
+    border-bottom: 5px solid #ced4da;
+    margin-right: 10px;
+}
+
+.or-divider::after {
+    content: '';
+    display: inline-block;
+    width: 30%;
+    border-bottom: 5px solid #ced4da;
+    margin-left: 10px;
+}
+
+.btn-google,
+.btn-facebook {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.btn-google {
+    border: 1px solid #ced4da;
+}
+
+.btn-facebook {
+    background-color: #1877f2;
+    color: white;
+}
 
 .login-link {
-    margin-top: 1rem;
-    display: block;
-    color: #45046a;
-    text-decoration: none;
+    font-size: 20px;
+
 }
-.login-link:hover{
-    color: #7f75bb;
+
+.login-link:hover {
+    color: #1877f2;
 }
-.space{
-    
-        margin: 20px 0;
-    
+
+.logo-container {
+    text-align: left;
+    padding-top: 20px;
+    /* Adjust the space above */
+    padding-bottom: 20px;
+    /* Adjust the space below */
+}
+
+.logo-container img {
+    max-width: 200px;
+    /* Adjust the width of the image */
+}
+
+.title {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-right: 20px;
+    font-size: 2.5rem;
+    color: #FF5B37;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -0.5px;
+    display:flex;
+}
+span{
+    font-size: 1.5rem;
 }
