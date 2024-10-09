@@ -77,7 +77,8 @@
 }
 
 .div5 {
-  grid-area: 1 / 7 / 2 / 9;
+  grid-area: 1 / 7 /2/9;
+  justify-content: center;
 }
 
 .div5 ul {
@@ -85,7 +86,11 @@
   flex-flow: row wrap;
   align-items: center;
   margin: 0;
+  gap: 0;
+  
 }
+  
+
 
 .div5 ul li {
   display: flex;
@@ -93,7 +98,21 @@
   align-items: center;
   gap: 0;
   margin: 0;
+  padding: 0rem;
+  background-color: transparent;
+  color: #8f8f8f;
+  border: none;
+  font-size: 17px;
+  text-decoration:#6b6b6e solid ;
 }
+// .div5 ul li :last-child {
+//   display: flex;
+//   flex-flow: row wrap;
+//   align-items: center;
+//   gap: 0;
+//   margin: 0;
+//   // flex: 0.5;
+// }
 
 .div3 {
   grid-area: 1 / 4 / 2 / 5;
@@ -172,4 +191,15 @@
     display: none;
   }
 
+}
+.auth-buttons {
+  display: flex;
+  gap: 0px; /* Space between the login and sign-up buttons */
+}
+
+.auth-buttons a {
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
 }
